@@ -3,7 +3,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, p, li, nav, a {
+    color: rgba(38, 38, 38, 1);
+    letter-spacing: 0.5px;
+    line-height: 19px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 body {
@@ -11,51 +25,52 @@ body {
   color: #333;
 }
 
-.home {
-  position: relative;
-  width: 1440px;
-  height: 800px;
+section {
+  width: 100%;
+  min-height: 720px;
+  height: 100vh;
   background-color: rgba(231, 240, 102, 1);
-  overflow: hidden;
 }
 
-.home-header {
+.home {
+  background-color: rgba(231, 240, 102, 1);
+  }
+
+.logo {
   position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 100%;
+  width: 100px;
+  height: 40px;
+  top: 26px;
+  left: 26px;
+  z-index: 20;
+
+}
+
+.home-nav {
+  list-style: none;
+  position: absolute;
+  width: 200px;
+  height: 80px;
+  margin-left: 1270px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  z-index: 20;
 }
 
-.logo img {
-  width: 100px;
-  height: auto;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-}
-
-nav ul li {
-  margin-left: 20px;
-}
-
-nav ul li a {
+.home-cart {
+  text-transform: uppercase;
   text-decoration: none;
-  color: black;
-  font-weight: bold;
+  
 }
+
 
 .home-img {
   position: absolute;
   top: 0;
   left: 0;
-  height: 688px;
+  width: 1040px;
+  height: 600px;
   object-fit: cover;
   z-index: 1;
   display: block;
@@ -63,36 +78,53 @@ nav ul li a {
 
 /* Текст */
 .home-text {
-  position: absolute;
-  width: 330px;
-  top: 40px;
+position: absolute;
+  width: 300px;
+  height: 100px;
+  top: 90px;
   left: 75%;
-  color: black;
-  background: rgba(255, 255, 255, 0.7);
-  padding: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
 }
+
 
 /* Куки-баннер */
 .cookie-banner {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
-  background: black;
-  color: white;
-  padding: 20px;
-  max-width: 300px;
+  Width: 380px;
+  Height: 230px;
+  Top: 420px;
+  Left: 900px;
+  background-color: rgba(27, 27, 27, 1);
+  z-index: 20;}
+
+.cookie-text {
+color: rgba(241, 241, 238, 1);
+width: 275px;
+height: 133px;
+margin-top: 47px;
+margin-left: 48px;
+font-size: 16px;
 }
 
-/* Подпись */
+.cookie-button {
+  color: rgba(241, 241, 238, 1);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    margin-left: 48px;
+
+}
+
 .slogan {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: #fffa87;
-  text-align: center;
-  padding: 20px;
-  font-size: 20px;
+position: absolute;
+height: 32px;
+top: 650px;
+left: 40px;
+font-size: 25px;
+line-height: 32px;
 }
 
 
