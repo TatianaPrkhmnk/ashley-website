@@ -1,4 +1,3 @@
-/* Общие стили */
 * {
   margin: 0;
   padding: 0;
@@ -6,10 +5,16 @@
   font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, p, li, nav, a {
-    color: rgba(38, 38, 38, 1);
-    letter-spacing: 0.5px;
-    line-height: 19px;
+h1,
+h2,
+h3,
+p,
+li,
+nav,
+a {
+  color: rgba(38, 38, 38, 1);
+  letter-spacing: 0.5px;
+  line-height: 19px;
 }
 
 html,
@@ -34,7 +39,7 @@ section {
 
 .home {
   background-color: rgba(231, 240, 102, 1);
-  }
+}
 
 .logo {
   position: absolute;
@@ -61,7 +66,7 @@ section {
 .home-cart {
   text-transform: uppercase;
   text-decoration: none;
-  
+
 }
 
 
@@ -78,7 +83,7 @@ section {
 
 /* Текст */
 .home-text {
-position: absolute;
+  position: absolute;
   width: 300px;
   height: 100px;
   top: 90px;
@@ -97,80 +102,72 @@ position: absolute;
   Top: 420px;
   Left: 900px;
   background-color: rgba(27, 27, 27, 1);
-  z-index: 20;}
+  z-index: 20;
+}
 
 .cookie-text {
-color: rgba(241, 241, 238, 1);
-width: 275px;
-height: 133px;
-margin-top: 47px;
-margin-left: 48px;
-font-size: 16px;
+  color: rgba(241, 241, 238, 1);
+  width: 275px;
+  height: 133px;
+  margin-top: 47px;
+  margin-left: 48px;
+  font-size: 16px;
 }
 
 .cookie-button {
   color: rgba(241, 241, 238, 1);
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 12px;
-    letter-spacing: 1.2px;
-    margin-left: 48px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  margin-left: 48px;
 
 }
 
 .slogan {
-position: absolute;
-height: 32px;
-top: 650px;
-left: 40px;
-font-size: 25px;
-line-height: 32px;
+  position: absolute;
+  height: 32px;
+  top: 650px;
+  left: 40px;
+  font-size: 25px;
+  line-height: 32px;
 }
-
-
 
 
 /* 2й слайд */
-.gallery-1,
-.gallery-2 {
-  text-align: center;
+.candle {
+  background-color: rgba(156, 133, 84, 1);
+}
+
+.candle-text {
+  display: flex;
+  flex-direction: column;
   padding: 40px;
 }
 
-.gallery-1 img,
-.gallery-2 img {
-  width: 80%;
-  max-width: 600px;
-  border-radius: 10px;
+.candle-title {
+    color: rgba(178, 178, 178, 1);
+      font-size: 16px;
 }
 
-/* ТЕКСТОВЫЙ БЛОК */
-.text-block {
-  background: black;
-  color: white;
-  padding: 20px;
-  text-align: center;
+.candle-paragraph{
+      color: rgba(178, 178, 178, 1);
+      font-size: 16px;
+      width: 330px;
+      height: 100px;
+
+      padding-top: 300px;
 }
 
-.text-block a {
-  color: #fffa87;
-  text-decoration: none;
-  font-weight: bold;
+.candle-button {
+  color: rgba(178, 178, 178, 1);
 }
 
+.candle-img {
+  width: 1065px;
+  height: 700px;
+  margin-left: 360px;
 
-.about {
-  background: #ddd;
-  padding: 40px;
-  text-align: center;
-}
-
-/* (Call-to-Action) */
-.cta {
-  text-align: center;
-  padding: 50px;
-  font-size: 24px;
-  font-weight: bold;
 }
 
 footer {
