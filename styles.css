@@ -34,7 +34,6 @@ section {
   width: 100%;
   min-height: 720px;
   height: 100vh;
-  background-color: rgba(231, 240, 102, 1);
 }
 
 .home {
@@ -48,6 +47,7 @@ section {
   top: 26px;
   left: 26px;
   z-index: 20;
+  stroke: red;
 
 }
 
@@ -88,20 +88,43 @@ section {
   height: 100px;
   top: 90px;
   left: 75%;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 40px;
 }
 
+.home-title {
+    font-weight: 400;
+      font-size: 15px;
+      line-height: 30px;
+      margin-bottom: 30px;
+        padding-bottom: 40px;
+        padding-top: 50px;
+}
 
-/* Куки-баннер */
+.home-button {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: black;
+  color: white;
+}
+
 .cookie-banner {
   position: absolute;
   Width: 380px;
   Height: 230px;
   Top: 420px;
   Left: 900px;
-  background-color: rgba(27, 27, 27, 1);
+  background-color: rgb(27, 27, 27);
   z-index: 20;
 }
 
@@ -131,44 +154,247 @@ section {
   left: 40px;
   font-size: 25px;
   line-height: 32px;
+  font-weight: 300;
 }
 
+ /* 2й слайд */
 
-/* 2й слайд */
 .candle {
   background-color: rgba(156, 133, 84, 1);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  padding: 40px;
+  height: 100vh;
 }
 
 .candle-text {
+  position: absolute;
   display: flex;
   flex-direction: column;
-  padding: 40px;
+  justify-content: space-between;
+  width: 40%;
+  height: 90%;
 }
 
 .candle-title {
-    color: rgba(178, 178, 178, 1);
-      font-size: 16px;
+  color: rgba(178, 178, 178, 1);
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
-.candle-paragraph{
-      color: rgba(178, 178, 178, 1);
-      font-size: 16px;
-      width: 330px;
-      height: 100px;
-
-      padding-top: 300px;
+.candle-paragraph {
+  color: rgba(178, 178, 178, 1);
+  font-size: 16px;
+  width: 330px;
+  margin-top: auto;
+  margin-bottom: 20px;
+  
 }
 
 .candle-button {
   color: rgba(178, 178, 178, 1);
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-top: 10px;
 }
 
 .candle-img {
-  width: 1065px;
-  height: 700px;
-  margin-left: 360px;
-
+  position: absolute;
+  width: 65%;
+  height: auto;
+  object-fit: cover;
+  top: 0;
+  right: 0;
 }
+
+.candle-footer {
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+  color: rgba(178, 178, 178, 1);
+  font-size: 30px;
+}
+
+/* 3й слайд */
+
+.products {
+  display: flex;
+  width: 100%;
+  height: 800px;
+}
+
+.product {
+  width: 50%;
+  position: relative;
+}
+
+.product img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 12px;
+  line-height: 19px;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgba(38, 38, 38, 1);
+  text-decoration: none;
+}
+
+.product-text:hover {
+  text-decoration: underline;
+}
+
+/* 4й слайд */
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #f5f5f5;
+  padding: 50px;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: cover;
+}
+
+.about-text {
+  flex: 1;
+  padding: 40px;
+}
+
+.about-subtitle {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: rgba(38, 38, 38, 1);
+}
+
+.about-title {
+    width: 234px;
+      height: 64px;
+  font-size: 28px;
+  margin-top: 30px;
+}
+
+.about-description {
+  width: 285px;
+  height: 38px;
+  font-size: 14px;
+  line-height: 19px;
+  margin-top: 30px;
+}
+
+.about-description-2 {
+    width: 310px;
+      height: 75px;
+      font-size: 16px;
+      line-height: 19px;
+      margin-top: 15px;
+}
+
+.about-link {
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-underline-offset: 10px;
+}
+
+.about-link:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+/* 5й слайд */
+.home-perfume {
+  background-color: rgba(145, 101, 115, 1);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  padding: 40px;
+  height: 100vh;
+}
+
+.home-perfume-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  height: 90%;
+}
+
+.home-perfume-title {
+  color: rgba(178, 178, 178, 1);
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.home-perfume-description {
+  color: rgba(178, 178, 178, 1);
+  font-size: 16px;
+  width: 330px;
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
+.home-perfume-link {
+  color: rgba(178, 178, 178, 1);
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-top: 10px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(178, 178, 178, 1);
+}
+
+.home-perfume-link:hover {
+  border-bottom: none;
+  opacity: 0.7;
+}
+
+.home-perfume-image {
+  position: absolute;
+  width: 65%;
+  height: auto;
+  object-fit: cover;
+  top: 0;
+  right: 0;
+}
+
+.home-perfume-footer {
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+  color: rgba(178, 178, 178, 1);
+  font-size: 30px;
+}
+
+/* 6й слайд */
 
 footer {
   background: black;
