@@ -12,6 +12,7 @@ p,
 li,
 nav,
 a {
+  font-weight: 400;
   color: rgba(38, 38, 38, 1);
   letter-spacing: 0.5px;
   line-height: 19px;
@@ -200,6 +201,11 @@ section {
   margin-top: 10px;
 }
 
+.candle-button:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
 .candle-img {
   position: absolute;
   width: 65%;
@@ -245,7 +251,6 @@ section {
   letter-spacing: 1.2px;
   font-weight: 400;
   text-transform: uppercase;
-  color: rgba(38, 38, 38, 1);
   text-decoration: none;
 }
 
@@ -330,7 +335,7 @@ section {
 }
 
 /* 5й слайд */
-.home-perfume {
+.perfume {
   background-color: rgba(145, 101, 115, 1);
   display: flex;
   align-items: flex-start;
@@ -340,7 +345,7 @@ section {
   height: 100vh;
 }
 
-.home-perfume-text {
+.perfume-text {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -349,13 +354,13 @@ section {
   height: 90%;
 }
 
-.home-perfume-title {
+.perfume-title {
   color: rgba(178, 178, 178, 1);
   font-size: 16px;
   text-transform: uppercase;
 }
 
-.home-perfume-description {
+.perfume-paragraph {
   color: rgba(178, 178, 178, 1);
   font-size: 16px;
   width: 330px;
@@ -363,21 +368,19 @@ section {
   margin-bottom: 20px;
 }
 
-.home-perfume-link {
+.perfume-button {
   color: rgba(178, 178, 178, 1);
   text-transform: uppercase;
   font-size: 12px;
   margin-top: 10px;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(178, 178, 178, 1);
 }
 
-.home-perfume-link:hover {
-  border-bottom: none;
+.perfume-button:hover {
+  text-decoration: none;
   opacity: 0.7;
 }
 
-.home-perfume-image {
+.perfume-img {
   position: absolute;
   width: 65%;
   height: auto;
@@ -386,7 +389,137 @@ section {
   right: 0;
 }
 
-.home-perfume-footer {
+.perfume-footer {
+  position: absolute;
+  bottom: 30px;
+  right: 70px;
+  color: rgba(178, 178, 178, 1);
+  font-size: 30px;
+}
+
+/* 6й слайд */
+
+.mist {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.mist-text {
+  position: absolute;
+  z-index: 1;
+  left: 5%;
+  top: 13%;
+  width: 300px;
+  color: rgba(38, 38, 38, 1);
+}
+
+.mist-subtitle {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.mist-title {
+  font-size: 28px;
+  line-height: 32px;
+  margin-top: 20px;
+}
+
+.mist-description {
+  font-size: 14px;
+  line-height: 19px;
+  margin-top: 20px;
+}
+
+.mist-link {
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(38, 38, 38, 1);
+  margin-top: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mist-link:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.mist-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.mist-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* 7й слайд*/
+
+.hand {
+  background-color: rgba(88, 85, 84, 1);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  padding: 40px;
+  height: 100vh;
+}
+
+.hand-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  height: 90%;
+}
+
+.hand-title {
+  color: rgba(178, 178, 178, 1);
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.hand-paragraph {
+  color: rgba(178, 178, 178, 1);
+  font-size: 16px;
+  width: 330px;
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
+.hand-button {
+  color: rgba(178, 178, 178, 1);
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.hand-button:hover {
+  text-decoration: none;
+    opacity: 0.7;
+}
+
+.hand-img {
+  position: absolute;
+  width: 65%;
+  height: auto;
+  object-fit: cover;
+  top: 0;
+  right: 0;
+}
+
+.hand-footer {
   position: absolute;
   bottom: 30px;
   right: 50px;
@@ -394,11 +527,125 @@ section {
   font-size: 30px;
 }
 
-/* 6й слайд */
+/* 8й слайд */
 
-footer {
-  background: black;
+.hold {
+  background-color: rgba(176, 72, 54, 1);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  padding: 40px;
+  height: 100vh;
+}
+
+.hold-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  height: 90%;
+}
+
+.hold-title {
+  color: rgba(178, 178, 178, 1);
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.hold-paragraph {
+  color: rgba(178, 178, 178, 1);
+  font-size: 16px;
+  width: 330px;
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
+.hold-button {
+  color: rgba(178, 178, 178, 1);
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.hold-button:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.hold-img {
+  position: absolute;
+  width: 65%;
+  height: auto;
+  object-fit: cover;
+  top: 0;
+  right: 0;
+}
+
+.hold-footer {
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+  color: rgba(178, 178, 178, 1);
+  font-size: 30px;
+}
+
+/* Футер */
+
+.footer {
+  background-color: rgba(38, 38, 38, 1);
+  padding: 40px 40px;
+  color: rgba(204, 204, 204, 1);
+}
+
+/* .footer-content {
+  max-width: 1000px;
+  text-align: left;
+} */
+
+.footer-text {
+  color: rgba(204, 204, 204, 1);
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.footer-form {
+  display: flex;
+}
+
+.footer-input-group {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-input {
+  width: 280px;
+  flex: 1;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(178, 178, 178, 1);
+  padding: 10px;
   color: white;
-  text-align: center;
-  padding: 20px;
+  font-size: 14px;
+  outline: none;
+}
+
+.footer-input::placeholder {
+  color: rgba(178, 178, 178, 1);
+}
+
+.footer-submit {
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  color: rgba(178, 178, 178, 1);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.footer-submit:hover {
+  opacity: 0.7;
 }
